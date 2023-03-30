@@ -15,7 +15,7 @@ function Line() {
       .attr("height", h)
       .style("background-color", "#d3d3d3")
       .style("overflow", "visible")
-      .style("margin-top", "50");
+      .style("margin-top", "75");
 
     // Setting up scales
     const xScale = d3

@@ -11,16 +11,16 @@ function Pie() {
 
   useEffect(() => {
     // Setting svg container
-    const w = 500;
-    const h = 500;
+    const w = 400;
+    const h = 400;
     const radius = w / 2;
     const svg = d3
       .select(svgRef.current)
       .attr("width", w)
       .attr("height", h)
       .style("overflow", "visible")
-      .style("margin-top", "325px")
-      .style("margin-left", "450px");
+      .style("margin-top", "75px")
+      .style("margin-left", "350px");
 
     // Setting up chart
     const formattedData = d3.pie().value((d) => d.value)(data);
