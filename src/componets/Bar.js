@@ -6,7 +6,7 @@ function Bar() {
   const svgRef = useRef();
 
   useEffect(() => {
-    // setting svg container
+    // Setting svg container
     const w = 400;
     const h = 300;
     const svg = d3
