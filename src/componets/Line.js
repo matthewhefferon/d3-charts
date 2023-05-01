@@ -8,12 +8,12 @@ function Line() {
   useEffect(() => {
     // Setting svg container
     const w = 800;
-    const h = 200;
+    const h = 250;
     const svg = d3
       .select(svgRef.current)
       .attr("width", w)
       .attr("height", h)
-      .style("background-color", "#d3d3d3")
+      .style("background-color", "#5E6168")
       .style("overflow", "visible")
       .style("margin-top", "75");
 
@@ -47,7 +47,7 @@ function Line() {
       .join("path")
       .attr('d', d => generateScaledLine(d))
       .attr('fill', 'none')
-      .attr('stroke', 'black')
+      .attr('stroke', 'white')
 
   }, [data]);
 

@@ -5,7 +5,7 @@ import Scatter from "./componets/Scatter";
 
 function App() {
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center text-white">
       {/* <Bar /> */}
       <Line />
       {/* <Pie /> */}
