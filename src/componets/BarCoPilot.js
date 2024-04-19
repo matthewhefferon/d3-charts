@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import * as d3 from "d3";
 
-function Bar() {
+//create a bar chart that uses d3 and the color is white
+function BarCoPilot() {
   const [data] = useState([200, 250, 60, 150, 100, 175]);
   const svgRef = useRef();
 
@@ -40,10 +41,10 @@ function Bar() {
       .attr("y", yScale)
       .attr("width", xScale.bandwidth())
       .attr("height", (v) => h - yScale(v))
-      .attr("fill", "orange")
+      .attr("fill", "white")
   }, [data]);
 
   return <svg ref={svgRef}></svg>;
 }
 
-export default Bar;
+export default BarCoPilot;
