@@ -39,7 +39,8 @@ function Bar() {
       .attr("x", (d, i) => xScale(i))
       .attr("y", yScale)
       .attr("width", xScale.bandwidth())
-      .attr("height", (v) => h - yScale(v));
+      .attr("height", (v) => h - yScale(v))
+      .attr("fill", "orange");
   }, [data]);
 
   return <svg ref={svgRef}></svg>;
